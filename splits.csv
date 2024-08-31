@@ -1,0 +1,92 @@
+Split,Day,Part,Count,Details
+3,1,Chest,4,Push
+3,1,Shoulder,3,Push
+3,1,Triceps,2,Push
+3,2,Back,5,Pull
+3,2,Traps,1,Pull
+3,2,Biceps,3,Pull
+3,3,Rest,0,Rest day
+3,4,Rest,0,Rest day
+3,5,Quads,3,Legs
+3,5,Hamstrings,1,Legs
+3,5,Glutes,1,Legs
+3,5,Calves,1,Legs
+3,5,Abs,3,Abs
+3,6,Rest,0,Rest day
+3,7,Rest,0,Rest day
+4,1,Chest,5,Chest
+4,1,Biceps,3,Chest
+4,2,Back,5,Back
+4,2,Triceps,3,Back
+4,3,Rest,0,Rest day
+4,4,Shoulder,4,Shoulder
+4,4,Traps,1,Shoulder
+4,4,Abs,3,Abs
+4,5,Rest,0,Rest day
+4,6,Quads,3,Legs
+4,6,Hamstrings,1,Legs
+4,6,Glutes,1,Legs
+4,6,Calves,1,Legs
+4,6,Abs,3,Abs
+4,7,Rest,0,Rest day
+5,1,Chest,5,Chest
+5,1,Abs,3,Abs
+5,2,Back,5,Back
+5,3,Rest,0,Rest day
+5,4,Biceps,3,Biceps
+5,4,Triceps,3,Triceps
+5,5,Shoulder,3,Shoulder
+5,5,Traps,1,Shoulder
+5,5,Abs,3,Abs
+5,6,Rest,0,Rest day
+5,7,Quads,3,Legs
+5,7,Hamstrings,1,Legs
+5,7,Glutes,1,Legs
+5,7,Calves,1,Legs
+5,7,Abs,3,Abs
+6,1,Back,5,Pull
+6,1,Traps,1,Pull
+6,1,Biceps,3,Pull
+6,2,Chest,4,Push
+6,2,Shoulder,3,Push
+6,2,Triceps,2,Push
+6,3,Quads,3,Legs
+6,3,Hamstrings,1,Legs
+6,3,Glutes,1,Legs
+6,3,Calves,1,Legs
+6,3,Abs,3,Abs
+6,4,Rest,0,Rest day
+6,5,Back,5,Pull
+6,5,Traps,1,Pull
+6,5,Biceps,3,Pull
+6,6,Chest,4,Push
+6,6,shoulder,3,Push
+6,6,Triceps,2,Push
+6,7,Quads,3,Legs
+6,7,Hamstrings,1,Legs
+6,7,Glutes,1,Legs
+6,7,Calves,1,Legs
+6,7,Abs,3,Abs
+7,1,Back,5,Pull
+7,1,Traps,1,Pull
+7,1,Biceps,3,Pull
+7,2,Chest,4,Push
+7,2,Shoulder,3,Push
+7,2,Triceps,2,Push
+7,3,Quads,3,Legs
+7,3,Hamstrings,1,Legs
+7,3,Glutes,1,Legs
+7,3,Calves,1,Legs
+7,3,Abs,3,Abs
+7,4,Cardio or Weak Body Part Day,0,Cardio or Weak Body Part Day
+7,5,Back,5,Pull
+7,5,Traps,1,Pull
+7,5,Biceps,3,Pull
+7,6,Chest,4,Push
+7,6,Shoulder,3,Push
+7,6,Triceps,2,Push
+7,7,Quads,3,Legs
+7,7,Hamstrings,1,Legs
+7,7,Glutes,1,Legs
+7,7,Calves,1,Legs
+7,7,Abs,3,Abs

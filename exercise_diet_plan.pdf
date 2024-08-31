@@ -10,7 +10,7 @@
 endobj
 4 0 obj
 <<
-/Length 3040
+/Length 3267
 >>
 stream
 0.5670000000000001 w
@@ -29,7 +29,7 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 700.15771653543311 Td
-(Day 1 Chest,Abs) Tj
+(Day 1 Push) Tj
 ET
 BT
 /F2 12 Tf
@@ -43,9 +43,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 586.7718897637794271 Td
-(- Flat Barbell Bench Press: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Mid chest ) Tj
-T* (- Video:https://youtu.be/CjHIKDQ4RQo?si=fPtig6PnwmNmvEjH) Tj
+(- Resistance band decline flies: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Lower chest ) Tj
+T* (- Video:https://www.youtube.com/watch?v=9Moyb6fbJlc) Tj
 T* () Tj
 T* () Tj
 ET
@@ -54,9 +54,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 530.0789763779526993 Td
-(- Incline Barbell Bench Press: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Upper chest ) Tj
-T* (- Video:https://youtu.be/2jFFCy8JBU8?si=D4f08moW8OAODlfc) Tj
+(- Incline push up: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Compound Lower chest ) Tj
+T* (- Video:https://www.youtube.com/watch?v=yAbg3_pJKvw) Tj
 T* () Tj
 T* () Tj
 ET
@@ -65,9 +65,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 473.3860629921259147 Td
-(- Decline Barbell Bench Press: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Lower chest ) Tj
-T* (- Video:https://youtu.be/iVh4B5bJ5OI?si=adR1mOz6sDhAoDZx) Tj
+(- Resistance band floor press: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Compound Overall chest ) Tj
+T* (- Video:https://www.youtube.com/watch?v=dnviBQFAphE) Tj
 T* () Tj
 T* () Tj
 ET
@@ -76,9 +76,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 416.69314960629913 Td
-(- Pec Deck Flies: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+(- Resistance band lying chest flies: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
 T* (- Target & Category: Isolation Overall chest ) Tj
-T* (- Video:https://youtu.be/eGjt4lk6g34?si=8AdkB1_BlO96Mat3) Tj
+T* (- Video:https://youtube.com/shorts/e2qxfifLb_Q?si=jsUC0mQ81GRSqs6Y) Tj
 T* () Tj
 T* () Tj
 ET
@@ -87,9 +87,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 360.0002362204724022 Td
-(- Cable crossover – Incline chest: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Upper chest ) Tj
-T* (- Video:https://youtu.be/bptdQtH7IQA?si=B3oOGtuSBC_9kQLj) Tj
+(- Resistance band front raises: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Front delts ) Tj
+T* (- Video:https://www.youtube.com/watch?v=PBVMoBewnuA) Tj
 T* () Tj
 T* () Tj
 ET
@@ -98,9 +98,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 303.3073228346455608 Td
-(- Decline ab crunch: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Lower abs ) Tj
-T* (- Video:https://youtu.be/kLh-uczlPLg?si=AeWeYbM5JguGWmz6) Tj
+(- Resistance band overhead press: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Compound Overall shoulders ) Tj
+T* (- Video:https://youtube.com/shorts/1-VfJqjYquQ?si=8NMEdu6SaENKYM1r) Tj
 T* () Tj
 T* () Tj
 ET
@@ -109,9 +109,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 246.614409448818833 Td
-(- Hanging leg raises: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Lower abs ) Tj
-T* (- Video:https://youtu.be/7FwGZ8qY5OU?si=21smaP9eTB1mJFRL) Tj
+(- Rear delt band pull aparts: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Rear delts ) Tj
+T* (- Video:https://www.youtube.com/watch?v=9IWz8v44mXs) Tj
 T* () Tj
 T* () Tj
 ET
@@ -120,27 +120,31 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 189.9214960629919915 Td
-(- Back supported leg raises: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Lower abs ) Tj
-T* (- Video:https://youtu.be/FSXXv8BL-yg?si=Di5HFah66OiBCZUv) Tj
+(- Resistance band skull crusher: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Overall triceps ) Tj
+T* (- Video:https://www.youtube.com/watch?v=uutP0eBt51I) Tj
 T* () Tj
 T* () Tj
 ET
-51.0236220472441033 147.4018110236219457 496.0629921259842945 -28.3464566929133888 re
-S
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 133.2285826771652637 Td
-(Day 2 Back) Tj
+(- Resistance band tricep push down: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Overall triceps ) Tj
+T* (- Video:https://www.youtube.com/watch?v=Y3CDzx-oj3k) Tj
+T* () Tj
+T* () Tj
 ET
+51.0236220472441033 90.7088976377951752 496.0629921259842945 -28.3464566929133888 re
+S
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 76.5356692913385359 Td
-(Exercises:) Tj
+(Day 2 Pull) Tj
 ET
 endstream
 endobj
@@ -154,7 +158,7 @@ endobj
 endobj
 6 0 obj
 <<
-/Length 2969
+/Length 3057
 >>
 stream
 0.5670000000000001 w
@@ -163,10 +167,17 @@ BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
+56.6929133858267775 785.1970866141732586 Td
+(Exercises:) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.157 g
 56.6929133858267775 728.5041732283464171 Td
-(- Rack Pulls : Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Overall back ) Tj
-T* (- Video:https://youtu.be/9vYBWV5OeKg?si=3EcNxA4cupZRmuU2) Tj
+(- Resistance band seated row: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Mid back ) Tj
+T* (- Video:https://www.youtube.com/watch?v=yIF-3TG1wgM) Tj
 T* () Tj
 T* () Tj
 ET
@@ -175,9 +186,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 671.8112598425196893 Td
-(- Lat pull downs \(overhand grip\): Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Upper back/lats ) Tj
-T* (- Video:https://youtu.be/JGeRYIZdojU?si=RyNUT_7TrgicjOog) Tj
+(- Resistance band bent over row: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Compound Overall back ) Tj
+T* (- Video:https://www.youtube.com/watch?v=TE3v7CgXiiI) Tj
 T* () Tj
 T* () Tj
 ET
@@ -186,9 +197,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 615.1183464566928478 Td
-(- Seated cable rows: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Mid back ) Tj
-T* (- Video:https://youtu.be/lJoozxC0Rns?si=-MKhqR2_aR4uE6Lu) Tj
+(- Superman banded row: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Upper back/lats ) Tj
+T* (- Video:https://www.youtube.com/watch?v=cvGqLu097MA) Tj
 T* () Tj
 T* () Tj
 ET
@@ -197,87 +208,87 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 558.42543307086612 Td
-(- Back Hyperextensions: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Lower back ) Tj
-T* (- Video:https://youtu.be/qtjJUWCnDyE?si=fJNRchl1s2DKcfsy) Tj
+(- Resistance band lat pull down: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Upper back/lats ) Tj
+T* (- Video:https://www.youtube.com/watch?v=eItdYA8i5ec) Tj
 T* () Tj
 T* () Tj
 ET
-51.0236220472441033 515.9057480314960458 496.0629921259842945 -28.3464566929133888 re
-S
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 501.7325196850393354 Td
-(Day 3 undefined) Tj
+(- Resistance band shrugs: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Compound Traps ) Tj
+T* (- Video:https://www.youtube.com/watch?v=JixytugiXDs) Tj
+T* () Tj
+T* () Tj
 ET
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 445.0396062992125508 Td
-(Rest day) Tj
+(- Resistance band concentration curls: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Overall biceps ) Tj
+T* (- Video:https://www.youtube.com/watch?v=uej9usJAIUw) Tj
+T* () Tj
+T* () Tj
 ET
-51.0236220472441033 402.5199212598424765 496.0629921259842945 -28.3464566929133888 re
-S
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 388.3466929133857661 Td
-(Day 4 Biceps,Triceps) Tj
+(- Resistance band bicep curls: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Overall biceps ) Tj
+T* (- Video:https://youtu.be/AaA7Yj3zHiU?si=xLq917WKa2qDzJ8t) Tj
+T* () Tj
+T* () Tj
 ET
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 331.6537795275589815 Td
-(Exercises:) Tj
+(- Resistance band hammer curls: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Overall biceps ) Tj
+T* (- Video:https://youtu.be/SniJo-6t7Gk?si=j8xSMCT8joCvwvCR) Tj
+T* () Tj
+T* () Tj
 ET
+51.0236220472441033 289.1340944881889072 496.0629921259842945 -28.3464566929133888 re
+S
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 274.9608661417322537 Td
-(- Incline dumbbell curl \(bench\): Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Overall biceps ) Tj
-T* (- Video:https://www.youtube.com/watch?v=FM7725AeXPA) Tj
-T* () Tj
-T* () Tj
+(Day 3 undefined) Tj
 ET
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 218.2679527559054122 Td
-(- Barbell curl straight bar: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Overall biceps ) Tj
-T* (- Video:https://www.youtube.com/watch?v=dDI8ClxRS04) Tj
-T* () Tj
-T* () Tj
+(Rest day) Tj
 ET
+51.0236220472441033 175.748267716535338 496.0629921259842945 -28.3464566929133888 re
+S
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 161.5750393700786844 Td
-(- Bicep Standing alternate dumbbell curl: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Overall biceps ) Tj
-T* (- Video:https://youtube.com/shorts/FHY_2t7R714?si=HNz-fOnQg83NpZHj) Tj
-T* () Tj
-T* () Tj
+(Day 4 undefined) Tj
 ET
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 104.882125984251843 Td
-(- Close grip bench press: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Overall triceps ) Tj
-T* (- Video:https://www.youtube.com/watch?v=DzA2xZhDGeo) Tj
-T* () Tj
-T* () Tj
+(Rest day) Tj
 ET
 endstream
 endobj
@@ -291,57 +302,57 @@ endobj
 endobj
 8 0 obj
 <<
-/Length 3223
+/Length 3139
 >>
 stream
 0.5670000000000001 w
 0 G
+51.0236220472441033 799.3703149606299121 496.0629921259842945 -28.3464566929133888 re
+S
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 785.1970866141732586 Td
-(- Triceps EZ bar skull crusher: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Overall triceps ) Tj
-T* (- Video:https://www.youtube.com/watch?v=jR7Y5YcugYc) Tj
-T* () Tj
-T* () Tj
+(Day 5 Legs,Abs) Tj
 ET
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 728.5041732283464171 Td
-(- Triceps Dumbbell skull crusher: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Overall triceps ) Tj
-T* (- Video:https://www.youtube.com/watch?v=jO2Jl9eZpXk) Tj
-T* () Tj
-T* () Tj
-ET
-51.0236220472441033 685.9844881889763428 496.0629921259842945 -28.3464566929133888 re
-S
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 671.8112598425196893 Td
-(Day 5 Shoulder,Abs) Tj
-ET
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 615.1183464566928478 Td
 (Exercises:) Tj
 ET
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
+56.6929133858267775 671.8112598425196893 Td
+(- Body weight squats: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Compound Quads ) Tj
+T* (- Video:https://www.youtube.com/shorts/3fl7uYmiMVw) Tj
+T* () Tj
+T* () Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.157 g
+56.6929133858267775 615.1183464566928478 Td
+(- Standing alternate lunge: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Compound Quads ) Tj
+T* (- Video:https://www.youtube.com/watch?v=g8-Ge9S0aUw) Tj
+T* () Tj
+T* () Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.157 g
 56.6929133858267775 558.42543307086612 Td
-(- Barbell overhead press Standing: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Overall shoulders ) Tj
-T* (- Video:https://youtu.be/ZXpdJOLNoWw?si=DHn1t3q2-2kpYEnk) Tj
+(- Resistance band squat: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Compound Quads ) Tj
+T* (- Video:https://youtu.be/Eaqr79zvqIw?si=vDak_TbQNgwpfeXV) Tj
 T* () Tj
 T* () Tj
 ET
@@ -350,9 +361,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 501.7325196850393354 Td
-(- Dumbbell side lateral raise: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Side delts ) Tj
-T* (- Video:https://youtu.be/OuG1smZTsQQ?si=wHbHE3CMjlI9fP7a) Tj
+(- Bodyweight romanian deadlift: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Compound Hamstrings ) Tj
+T* (- Video:https://www.youtube.com/watch?v=wFF_ZUaaObc) Tj
 T* () Tj
 T* () Tj
 ET
@@ -361,9 +372,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 445.0396062992125508 Td
-(- Rear delt flies: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Rear delts ) Tj
-T* (- Video:https://youtu.be/nlkF7_2O_Lw?si=sh_T1_hQ5t9GIEZh) Tj
+(- Bodyweight glute bridges: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Compound Glutes ) Tj
+T* (- Video:https://youtu.be/Cj5zDEgmumA?si=nCtJKmZeuTKOjo1w) Tj
 T* () Tj
 T* () Tj
 ET
@@ -372,9 +383,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 388.3466929133857661 Td
-(- Dumbbell Shrugs: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Traps ) Tj
-T* (- Video:https://youtu.be/qIR5YmXbg6k?si=C8MH2PtkJw0PHTb-) Tj
+(- Stair Calves Raises: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Calves ) Tj
+T* (- Video:https://www.youtube.com/watch?v=__qfDhdByMY) Tj
 T* () Tj
 T* () Tj
 ET
@@ -383,9 +394,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 331.6537795275589815 Td
-(- Decline ab crunch: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Lower abs ) Tj
-T* (- Video:https://youtu.be/kLh-uczlPLg?si=AeWeYbM5JguGWmz6) Tj
+(- Side leg raises: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Obliques ) Tj
+T* (- Video:https://youtu.be/DA4FVJH2PnU?si=HuF5qBFCpRAyMxTZ) Tj
 T* () Tj
 T* () Tj
 ET
@@ -394,9 +405,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 274.9608661417322537 Td
-(- Hanging leg raises: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Lower abs ) Tj
-T* (- Video:https://youtu.be/7FwGZ8qY5OU?si=21smaP9eTB1mJFRL) Tj
+(- Side planks: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Obliques ) Tj
+T* (- Video:https://youtu.be/tbWPBOgju9g?si=pgxWLZ-Pwhy93xsi) Tj
 T* () Tj
 T* () Tj
 ET
@@ -405,9 +416,9 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 218.2679527559054122 Td
-(- Back supported leg raises: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Lower abs ) Tj
-T* (- Video:https://youtu.be/FSXXv8BL-yg?si=Di5HFah66OiBCZUv) Tj
+(- Lying leg raise: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
+T* (- Target & Category: Isolation Overall abs ) Tj
+T* (- Video:https://youtu.be/Wp4BlxcFTkE?si=abAtQp_6Lfylu2uh) Tj
 T* () Tj
 T* () Tj
 ET
@@ -439,7 +450,7 @@ endobj
 endobj
 10 0 obj
 <<
-/Length 2943
+/Length 436
 >>
 stream
 0.5670000000000001 w
@@ -451,119 +462,20 @@ BT
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 785.1970866141732586 Td
-(Day 7 Legs,Abs) Tj
+(Day 7 undefined) Tj
 ET
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 728.5041732283464171 Td
-(Exercises:) Tj
-ET
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 671.8112598425196893 Td
-(- Barbell back squats: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Quads ) Tj
-T* (- Video:https://www.youtube.com/watch?v=rrJIyZGlK8c) Tj
-T* () Tj
-T* () Tj
+(Rest day) Tj
 ET
 BT
 /F2 12 Tf
 13.7999999999999989 TL
 0.157 g
 56.6929133858267775 615.1183464566928478 Td
-(- Barbell front squats: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Quads ) Tj
-T* (- Video:https://www.youtube.com/watch?v=I5GaxSYLCSc) Tj
-T* () Tj
-T* () Tj
-ET
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 558.42543307086612 Td
-(- Smith Machine back squats: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Quads ) Tj
-T* (- Video:https://www.youtube.com/shorts/xU4cuTffVZc) Tj
-T* () Tj
-T* () Tj
-ET
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 501.7325196850393354 Td
-(- Romanian deadlifts \(RDL\): Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Hamstrings ) Tj
-T* (- Video:https://www.youtube.com/watch?v=amLSSb8cXok) Tj
-T* () Tj
-T* () Tj
-ET
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 445.0396062992125508 Td
-(- Barbell Hip thrusts: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Compound Glutes ) Tj
-T* (- Video:https://www.youtube.com/watch?v=9ECcS84xNl8) Tj
-T* () Tj
-T* () Tj
-ET
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 388.3466929133857661 Td
-(- Seated Calf raises: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Calves ) Tj
-T* (- Video:https://www.youtube.com/shorts/vCOlZ-zk80o) Tj
-T* () Tj
-T* () Tj
-ET
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 331.6537795275589815 Td
-(- Decline ab crunch: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Lower abs ) Tj
-T* (- Video:https://youtu.be/kLh-uczlPLg?si=AeWeYbM5JguGWmz6) Tj
-T* () Tj
-T* () Tj
-ET
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 274.9608661417322537 Td
-(- Hanging leg raises: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Lower abs ) Tj
-T* (- Video:https://youtu.be/7FwGZ8qY5OU?si=21smaP9eTB1mJFRL) Tj
-T* () Tj
-T* () Tj
-ET
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 218.2679527559054122 Td
-(- Back supported leg raises: Reps 10-12 \(Rest: 45-90 Sec\)) Tj
-T* (- Target & Category: Isolation Lower abs ) Tj
-T* (- Video:https://youtu.be/FSXXv8BL-yg?si=Di5HFah66OiBCZUv) Tj
-T* () Tj
-T* () Tj
-ET
-BT
-/F2 12 Tf
-13.7999999999999989 TL
-0.157 g
-56.6929133858267775 104.882125984251843 Td
 (Diet Plan:) Tj
 ET
 endstream
@@ -738,7 +650,7 @@ endobj
 25 0 obj
 <<
 /Producer (jsPDF 2.5.1)
-/CreationDate (D:20240831063704+05'00')
+/CreationDate (D:20240831075725+05'00')
 >>
 endobj
 26 0 obj
@@ -752,39 +664,39 @@ endobj
 xref
 0 27
 0000000000 65535 f 
-0000012948 00000 n 
-0000014788 00000 n 
+0000010671 00000 n 
+0000012511 00000 n 
 0000000015 00000 n 
 0000000152 00000 n 
-0000003244 00000 n 
-0000003381 00000 n 
-0000006402 00000 n 
-0000006539 00000 n 
-0000009814 00000 n 
-0000009952 00000 n 
-0000013023 00000 n 
-0000013149 00000 n 
-0000013280 00000 n 
-0000013414 00000 n 
-0000013552 00000 n 
-0000013676 00000 n 
-0000013805 00000 n 
-0000013937 00000 n 
-0000014073 00000 n 
-0000014201 00000 n 
-0000014328 00000 n 
-0000014457 00000 n 
-0000014590 00000 n 
-0000014692 00000 n 
-0000015041 00000 n 
-0000015127 00000 n 
+0000003471 00000 n 
+0000003608 00000 n 
+0000006717 00000 n 
+0000006854 00000 n 
+0000010045 00000 n 
+0000010183 00000 n 
+0000010746 00000 n 
+0000010872 00000 n 
+0000011003 00000 n 
+0000011137 00000 n 
+0000011275 00000 n 
+0000011399 00000 n 
+0000011528 00000 n 
+0000011660 00000 n 
+0000011796 00000 n 
+0000011924 00000 n 
+0000012051 00000 n 
+0000012180 00000 n 
+0000012313 00000 n 
+0000012415 00000 n 
+0000012764 00000 n 
+0000012850 00000 n 
 trailer
 <<
 /Size 27
 /Root 26 0 R
 /Info 25 0 R
-/ID [ <5E75C726C29A6993D28A7C3C676752FC> <5E75C726C29A6993D28A7C3C676752FC> ]
+/ID [ <F203923B0AF232BD497F5708EE39D3C5> <F203923B0AF232BD497F5708EE39D3C5> ]
 >>
 startxref
-15231
+12954
 %%EOF

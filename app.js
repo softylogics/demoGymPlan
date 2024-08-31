@@ -899,10 +899,10 @@ const userInfo = {
   challenges: "I struggle with consistency , Poor eating habits",
   desiredBodyFat: "15%",
   dietaryPreferences: "nonVeg",
-  exerciseExperience: "No",
+  beginner: "Yes",
   focus: "Lose Fat",
   gender: "Female",
-  gymAccess: 'Gym',
+  gymAccess: 'Home',
   heightcm: "130",
   heightunit: "cm",
   knownInjuries: "knee",
@@ -916,7 +916,7 @@ const userInfo = {
   weightkg: "55",
   weightlbs: "121",
   weightunit: "kg",
-  workoutDaysPerWeek: "5",
+  workoutDaysPerWeek: "3",
   workoutDurationPerDay: "30-60 mins"
 };
 
@@ -927,7 +927,7 @@ Generate a personalized exercise plan based on the following user information:
 - **Body Fat Percentage**: ${userInfo.bodyFatPercentage}
 - **Body Type**: ${userInfo.bodyType}
 - **Desired Body Fat Percentage**: ${userInfo.desiredBodyFat}
-- **User Exercise Experience Level**: ${userInfo.exerciseExperience}
+- **User Exercise Experience Level**: ${userInfo.beginner}
 - **Fitness Focus**: ${userInfo.focus}
 - **Gender**: ${userInfo.gender}
 - **Gym Access**: ${userInfo.gymAccess}
@@ -1102,14 +1102,13 @@ async function generateDietPlan() {
 function getExercisesByLevelAndGymAccess(exercises) {
 
   // Filter exercises based on gym access and user level
-  if(userInfo.gymAccess==='Gym' && userInfo.exerciseExperience === 'Yes'){
-    return exercises.filter(exercise => exercise.Beginners === userInfo.exerciseExperience && !exercise.Exercise.toLowerCase().includes('resistance band'));
-
+  if(userInfo.gymAccess==='Gym' && userInfo.beginner === 'Yes'){
+    return exercises.filter(exercise => exercise.Beginners === userInfo.beginner && !exercise.Exercise.toLowerCase().includes('resistance band'));
   }
-  else if(userInfo.gymAccess==='Home' && userInfo.exerciseExperience === 'Yes'){
-    return exercises.filter(exercise => exercise.Type === userInfo.gymAccess && exercise.Beginners === userInfo.exerciseExperience);
+  else if(userInfo.gymAccess==='Home' && userInfo.beginner === 'Yes'){
+    return exercises.filter(exercise => exercise.Type === userInfo.gymAccess && exercise.Beginners === userInfo.beginner);
   }
-  else if(userInfo.gymAccess==='Home' && userInfo.exerciseExperience === 'No'){
+  else if(userInfo.gymAccess==='Home' && userInfo.beginner === 'No'){
     return exercises.filter(exercise => exercise.Type === userInfo.gymAccess);
   }
   else{
@@ -1151,16 +1150,13 @@ function getExercisesForDay(dayPlan, exercises) {
 
     }
     else {
-      if (Part === 'Chest') {
-        selectedExercises.push(...selectChestExercisesForHome(filteredExercises, Count));
-      }
-      else{
+      
       // Select the required number of exercises for that muscle group
       const exercisesForPart = filteredExercises.slice(0, Count);
 
       // Add the selected exercises to the overall plan for the day
       selectedExercises.push(...exercisesForPart);
-    }
+    
   }
 
   });
@@ -1203,7 +1199,7 @@ function selectBackExercisesForGym(exercises, Count){
   // Select exercises according to the formula
   const selectedExercises = [
     ...overallCompound.slice(0, 1), 
-    ...overallCompoundSecond.slice(1, 1),
+    ...overallCompoundSecond.slice(1, 2),
     ...upperLatsIsolation.slice(0, 1), 
     ...midBackIsolation.slice(0, 1), 
     ...lowerBackIsolation.slice(0, 1)
@@ -1220,7 +1216,7 @@ function selectShoulderExercisesForGym(exercises, Count){
   const sideDelts = exercises.filter(exercise => exercise.Target === 'Side delts');
   const rearDelts = exercises.filter(exercise => exercise.Target === 'Rear delts');
   const rearDeltsSecond = exercises.filter(exercise => exercise.Target === 'Rear delts');
-  const traps = exercises.filter(exercise => exercise.Target === 'Traps');
+  
 
 
   // Select exercises according to the formula
@@ -1228,8 +1224,8 @@ function selectShoulderExercisesForGym(exercises, Count){
     ...overallCompound.slice(0, 1), 
     ...sideDelts.slice(0, 1),
     ...rearDelts.slice(0, 1), 
-    ...rearDeltsSecond.slice(1, 1), 
-    ...traps.slice(0, 1)
+    ...rearDeltsSecond.slice(1, 2), 
+    
   ];
   if(selectedExercises.length > Count){
     selectedExercises.splice(Count-1 , 1);

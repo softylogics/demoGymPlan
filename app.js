@@ -902,7 +902,7 @@ const userInfo = {
   beginner: "Yes",
   focus: "Lose Fat",
   gender: "Female",
-  gymAccess: 'Home',
+  gymAccess: 'Gym',
   heightcm: "130",
   heightunit: "cm",
   knownInjuries: "knee",

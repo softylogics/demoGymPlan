@@ -1123,34 +1123,60 @@ function getExercisesForDay(dayPlan, exercises) {
   dayPlan.forEach(part => {
     const { Part, Count } = part;
 
-    // Filter exercises that match the muscle group (Part) and beginner level
+    
     const filteredExercises = exercises.filter(exercise => {
       
       return exercise.Muscle.toLowerCase() === Part.toLowerCase();
     });
 
-    if (userInfo.gymAccess === 'Gym') {
-      if (Part === 'Chest') {
-        selectedExercises.push(...selectChestExercisesForGym(filteredExercises, Count));
-      }
-      else if(Part === 'Back'){
-        selectedExercises.push(...selectBackExercisesForGym(filteredExercises, Count));
-      }
-      else if(Part === 'Shoulder'){
-        selectedExercises.push(...selectShoulderExercisesForGym(filteredExercises, Count));
-      }
-      else{
-        // Select the required number of exercises for that muscle group
-        const exercisesForPart = filteredExercises.slice(0, Count);
+    if (userInfo.gymAccess === 'Gym') {//Gym exercises
 
-        // Add the selected exercises to the overall plan for the day
-        selectedExercises.push(...exercisesForPart);
+      if(userInfo.beginner === 'Yes'){ //Gym/Beginner
+        if (Part === 'Abs') {
+          selectedExercises.push(...selectAbsExercisesForGym(filteredExercises, Count, 'Yes'));
+        }
+        else if (Part === 'Back') {
+          selectedExercises.push(...selectBackExercisesForGym(filteredExercises, Count, 'Yes'));
+        }
+        else if (Part === 'Biceps') {
+          selectedExercises.push(...selectBicepsExercisesForGym(filteredExercises, Count, 'Yes'));
+        }
+        else if (Part === 'Chest') {
+          selectedExercises.push(...selectChestExercisesForGym(filteredExercises, Count, 'Yes'));
+        }else if (Part === 'Calves') {
+          selectedExercises.push(...selectCalvesExercisesForGym(filteredExercises, Count, 'Yes'));
+        }else if (Part === 'Glutes') {
+          selectedExercises.push(...selectGlutesExercisesForGym(filteredExercises, Count, 'Yes'));
+        }else if (Part === 'Hamstrings') {
+          selectedExercises.push(...selectHamstringsExercisesForGym(filteredExercises, Count, 'Yes'));
+        }else if (Part === 'Quads') {
+          selectedExercises.push(...selectQuadsExercisesForGym(filteredExercises, Count, 'Yes'));
+        }
+        else if (Part === 'Shoulder') {
+          selectedExercises.push(...selectShoulderExercisesForGym(filteredExercises, Count, 'Yes'));
+        }else if (Part === 'Traps') {
+          selectedExercises.push(...selectTrapsExercisesForGym(filteredExercises, Count, 'Yes'));
+        }
+        else if (Part === 'Triceps') {
+          selectedExercises.push(...selecTricepsExercisesForGym(filteredExercises, Count, 'Yes'));
+        }
+      }
+      else{//Gym/Intermediates
 
       }
+      
+      
+      
+      
 
     }
-    else {
-      
+    else {//Home Exercises
+      if(userInfo.beginner === 'Yes'){ //Home/Beginner
+
+      }
+      else{//Home/Intermediates
+
+      }
       // Select the required number of exercises for that muscle group
       const exercisesForPart = filteredExercises.slice(0, Count);
 

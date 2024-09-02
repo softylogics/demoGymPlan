@@ -902,13 +902,13 @@ const userInfo = {
   beginner: "No",
   focus: "Lose Fat",
   gender: "Female",
-  gymAccess: 'Home',
+  gymAccess: 'Gym',
   heightcm: "130",
   heightunit: "cm",
   knownInjuries: "knee",
   medicalConditions: "diabetes",
   procrastinator: "Yes",
-  pullUpsCapability: "OneToTen",
+  pullUpsCapability: "None",
   pushUpsCapablity: "OneToTen",
   sleepQuality: "MoreThanEightHours",
   smoking: "No",
@@ -1137,133 +1137,72 @@ function getExercisesForDay(dayPlan, exercises) {
 
     if (userInfo.gymAccess === 'Gym') {//Gym exercises
 
-      if(userInfo.beginner === 'Yes'){ //Gym/Beginner
+      
         if (Part === 'Abs') {
-          selectedExercises.push(...selectAbsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectAbsExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }
         else if (Part === 'Back') {
-          selectedExercises.push(...selectBackExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectBackExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }
         else if (Part === 'Biceps') {
-          selectedExercises.push(...selectBicepsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectBicepsExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }
         else if (Part === 'Chest') {
-          selectedExercises.push(...selectChestExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectChestExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }else if (Part === 'Calves') {
-          selectedExercises.push(...selectCalvesExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectCalvesExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }else if (Part === 'Glutes') {
-          selectedExercises.push(...selectGlutesExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectGlutesExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }else if (Part === 'Hamstrings') {
-          selectedExercises.push(...selectHamstringsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectHamstringsExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }else if (Part === 'Quads') {
-          selectedExercises.push(...selectQuadsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectQuadsExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }
         else if (Part === 'Shoulder') {
-          selectedExercises.push(...selectShoulderExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectShoulderExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }else if (Part === 'Traps') {
-          selectedExercises.push(...selectTrapsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectTrapsExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }
         else if (Part === 'Triceps') {
-          selectedExercises.push(...selectTricepsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectTricepsExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }
-      }
-      else{//Gym/Intermediates
-        if (Part === 'Abs') {
-          selectedExercises.push(...selectAbsExercisesForGym(filteredExercises, Count, 'No'));
-        }
-        else if (Part === 'Back') {
-          selectedExercises.push(...selectBackExercisesForGym(filteredExercises, Count, 'No'));
-        }
-        else if (Part === 'Biceps') {
-          selectedExercises.push(...selectBicepsExercisesForGym(filteredExercises, Count, 'Yes'));
-        }
-        else if (Part === 'Chest') {
-          selectedExercises.push(...selectChestExercisesForGym(filteredExercises, Count, 'Yes'));
-        }else if (Part === 'Calves') {
-          selectedExercises.push(...selectCalvesExercisesForGym(filteredExercises, Count, 'Yes'));
-        }else if (Part === 'Glutes') {
-          selectedExercises.push(...selectGlutesExercisesForGym(filteredExercises, Count, 'Yes'));
-        }else if (Part === 'Hamstrings') {
-          selectedExercises.push(...selectHamstringsExercisesForGym(filteredExercises, Count, 'Yes'));
-        }else if (Part === 'Quads') {
-          selectedExercises.push(...selectQuadsExercisesForGym(filteredExercises, Count, 'Yes'));
-        }
-        else if (Part === 'Shoulder') {
-          selectedExercises.push(...selectShoulderExercisesForGym(filteredExercises, Count, 'Yes'));
-        }else if (Part === 'Traps') {
-          selectedExercises.push(...selectTrapsExercisesForGym(filteredExercises, Count, 'Yes'));
-        }
-        else if (Part === 'Triceps') {
-          selectedExercises.push(...selectTricepsExercisesForGym(filteredExercises, Count, 'Yes'));
-        }
-      }
+      
     }
     else {//Home Exercises
-      if(userInfo.beginner === 'Yes'){ //Home/Beginner
         if (Part === 'Abs') {
-          selectedExercises.push(...selectAbsExercisesForHome(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectAbsExercisesForHome(filteredExercises, Count, userInfo.beginner));
         }
         else if (Part === 'Back') {
-          selectedExercises.push(...selectBackExercisesForHome(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectBackExercisesForHome(filteredExercises, Count, userInfo.beginner));
         }
         else if (Part === 'Biceps') {
-          selectedExercises.push(...selectBicepsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectBicepsExercisesForHome(filteredExercises, Count, userInfo.beginner));
         }
         else if (Part === 'Chest') {
-          selectedExercises.push(...selectChestExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectChestExercisesForHome(filteredExercises, Count, userInfo.beginner));
         }else if (Part === 'Calves') {
-          selectedExercises.push(...selectCalvesExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectCalvesExercisesForHome(filteredExercises, Count, userInfo.beginner));
         }else if (Part === 'Glutes') {
-          selectedExercises.push(...selectGlutesExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectGlutesExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }else if (Part === 'Hamstrings') {
-          selectedExercises.push(...selectHamstringsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectHamstringsExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }else if (Part === 'Quads') {
-          selectedExercises.push(...selectQuadsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectQuadsExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }
         else if (Part === 'Shoulder') {
-          selectedExercises.push(...selectShoulderExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectShoulderExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }else if (Part === 'Traps') {
-          selectedExercises.push(...selectTrapsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectTrapsExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }
         else if (Part === 'Triceps') {
-          selectedExercises.push(...selectTricepsExercisesForGym(filteredExercises, Count, 'Yes'));
+          selectedExercises.push(...selectTricepsExercisesForGym(filteredExercises, Count, userInfo.beginner));
         }
-      }
-      else{//Home/Intermediates
-        if (Part === 'Abs') {
-          selectedExercises.push(...selectAbsExercisesForHome(filteredExercises, Count, 'No'));
-        }
-        else if (Part === 'Back') {
-          selectedExercises.push(...selectBackExercisesForHome(filteredExercises, Count, 'Yes'));
-        }
-        else if (Part === 'Biceps') {
-          selectedExercises.push(...selectBicepsExercisesForGym(filteredExercises, Count, 'Yes'));
-        }
-        else if (Part === 'Chest') {
-          selectedExercises.push(...selectChestExercisesForGym(filteredExercises, Count, 'Yes'));
-        }else if (Part === 'Calves') {
-          selectedExercises.push(...selectCalvesExercisesForGym(filteredExercises, Count, 'Yes'));
-        }else if (Part === 'Glutes') {
-          selectedExercises.push(...selectGlutesExercisesForGym(filteredExercises, Count, 'Yes'));
-        }else if (Part === 'Hamstrings') {
-          selectedExercises.push(...selectHamstringsExercisesForGym(filteredExercises, Count, 'Yes'));
-        }else if (Part === 'Quads') {
-          selectedExercises.push(...selectQuadsExercisesForGym(filteredExercises, Count, 'Yes'));
-        }
-        else if (Part === 'Shoulder') {
-          selectedExercises.push(...selectShoulderExercisesForGym(filteredExercises, Count, 'Yes'));
-        }else if (Part === 'Traps') {
-          selectedExercises.push(...selectTrapsExercisesForGym(filteredExercises, Count, 'Yes'));
-        }
-        else if (Part === 'Triceps') {
-          selectedExercises.push(...selectTricepsExercisesForGym(filteredExercises, Count, 'Yes'));
-        }
-      }
-      // Select the required number of exercises for that muscle group
-      const exercisesForPart = filteredExercises.slice(0, Count);
+      
+      // // Select the required number of exercises for that muscle group
+      // const exercisesForPart = filteredExercises.slice(0, Count);
 
-      // Add the selected exercises to the overall plan for the day
-      selectedExercises.push(...exercisesForPart);
+      // // Add the selected exercises to the overall plan for the day
+      // selectedExercises.push(...exercisesForPart);
     
   }
 
@@ -1272,14 +1211,14 @@ function getExercisesForDay(dayPlan, exercises) {
   return selectedExercises;
 }
 function selectAbsExercisesForGym(exercises, Count, beginner){
-  
+  let selectedExercises = []
   if(beginner == 'Yes'){
     const lowerAbs =shuffleArray(exercises.filter(exercise => exercise.Target === 'Lower abs'));
     const thirdExercise =shuffleArray(exercises.filter(exercise => exercise.Target !== 'Lower abs'));
   
     
     // Select exercises according to the formula
-    const selectedExercises = [
+    selectedExercises = [
       ...lowerAbs.slice(0, 1), 
       ...lowerAbs.slice(1, 2), 
       ...thirdExercise.slice(0, 1)
@@ -1293,7 +1232,7 @@ function selectAbsExercisesForGym(exercises, Count, beginner){
 
   
   // Select exercises according to the formula
-  const selectedExercises = [
+  selectedExercises = [
     ...lowerAbs.slice(0, 1), 
     ...lowerAbs.slice(1, 2), 
     ...thirdExercise.slice(0, 1)
@@ -1341,15 +1280,20 @@ function selectAbsExercisesForHome(exercises, Count, beginner){
 }
 function selectBackExercisesForGym(exercises, Count,beginner){
   let selectedExercises = []
+  let upperLatsCompound = []
   if(beginner === 'Yes'){
 
-    const overallCompound = exercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Overall back');
+    const overallCompound = shuffleArray(exercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Overall back'));
+    if(userInfo.pullUpsCapability === 'None'){
+      upperLatsCompound = shuffleArray(exercises.filter(exercise => exercise.Exercise === 'Inverted pull ups'));
+    }
+    else{
+      upperLatsCompound = shuffleArray(exercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Upper back/lats'));
+    }
+    const upperLatsIsolation = shuffleArray(exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Upper back/lats'));
   
-    const upperLatsCompound = exercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Upper back/lats');
-    const upperLatsIsolation = exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Upper back/lats');
-  
-    const midBackIsolation = exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Mid back');
-    const lowerBackIsolation = exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Lower back');
+    const midBackIsolation = shuffleArray(exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Mid back'));
+    const lowerBackIsolation = shuffleArray(exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Lower back'));
   
     // Select exercises according to the formula
     selectedExercises = [
@@ -1365,13 +1309,17 @@ function selectBackExercisesForGym(exercises, Count,beginner){
   }
   else{
 
-    const overallCompound = exercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Overall back');
+    const overallCompound = shuffleArray(exercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Overall back'));
+    if(userInfo.pullUpsCapability === 'None'){
+      upperLatsCompound = shuffleArray(exercises.filter(exercise => exercise.Exercise === 'Inverted pull ups'));
+    }
+    else{
+      upperLatsCompound = shuffleArray(exercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Upper back/lats'));
+    }
+    const upperLatsIsolation = shuffleArray(exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Upper back/lats'));
   
-    const upperLatsCompound = exercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Upper back/lats');
-    const upperLatsIsolation = exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Upper back/lats');
-  
-    const midBackIsolation = exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Mid back');
-    const lowerBackIsolation = exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Lower back');
+    const midBackIsolation = shuffleArray(exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Mid back'));
+    const lowerBackIsolation = shuffleArray(exercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Lower back'));
   
     // Select exercises according to the formula
     selectedExercises = [
@@ -1387,65 +1335,98 @@ function selectBackExercisesForGym(exercises, Count,beginner){
   }
   return selectedExercises;
 }
-function selectBicepsExercisesForGym(exercises, Count, beginner){
-  
-  const lowerAbs =shuffleArray(exercises.filter(exercise => exercise.Target === 'Lower abs'));
-  const thirdExercise =shuffleArray(exercises.filter(exercise => !exercise.Target === 'Lower abs'));
+function selectBackExercisesForHome(exercises, Count,beginner){
+  const shuffledExercises = shuffleArray(exercises);
+  const selectedExercises = shuffledExercises.slice(0, Count);
 
-  
+  return selectedExercises;
+}
+function selectBicepsExercisesForGym(exercises, Count, beginner){
+  let selectedExercises = []
+  if(beginner === 'Yes'){
+    const curlExercise = shuffleArray(exercises.filter(exercise => exercise.Exercise.toLowerCase().includes('curl')));
+    const hammerExercise = shuffleArray(exercises.filter(exercise => exercise.Exercise.toLowerCase().includes('hammer')));
+    const preacherExercise = shuffleArray(exercises.filter(exercise => exercise.Exercise.toLowerCase().includes('preacher')));
   // Select exercises according to the formula
-  const selectedExercises = [
-    ...lowerAbs.slice(0, 1), 
-    ...lowerAbs.slice(1, 2), 
-    ...thirdExercise.slice(0, 1)
+  selectedExercises = [
+    ...curlExercise.slice(0, 1), 
+    ...hammerExercise.slice(0, 1), 
+    ...preacherExercise.slice(0, 1)
     
-  ];
-  if(selectedExercises.length > Count){
-    selectedExercises.splice(Count-1 , 1);
+  ];  
+
   }
+  else{
+    const exercisesForFirstNumber = shuffleArray(exercises.filter(exercise => exercise.Exercise.toLowerCase() === 'incline dumbbell curl (bench)' || exercise.Exercise.toLowerCase() === 'bicep standing alternate dumbbell curl' || exercise.Exercise.toLowerCase() === 'barbell curl ez (curl) bar'));
+    const exercisesForSecondNumber = shuffleArray(exercises.filter(exercise => exercise.Exercise.toLowerCase().includes('hammer')));
+    const exercisesForThirdNumber = shuffleArray(exercises.filter(exercise => exercise.Exercise.toLowerCase() === 'dumbbell preacher curl' || exercise.Exercise.toLowerCase() === 'barbell preacher curl' || exercise.Exercise.toLowerCase() === 'machine preacher curl'));
+  // Select exercises according to the formula
+  selectedExercises = [
+    ...exercisesForFirstNumber.slice(0, 1), 
+    ...exercisesForSecondNumber.slice(0, 1), 
+    ...exercisesForThirdNumber.slice(0, 1)
+    
+  ];  
+}
+return selectedExercises;
+ 
+  
+}
+function selectBicepsExercisesForHome(exercises, Count, beginner){
+  const shuffledExercises = shuffleArray(exercises);
+  const selectedExercises = shuffledExercises.slice(0, Count);
+
   return selectedExercises;
 }
 function selectCalvesExercisesForGym(exercises, Count, beginner){
   
-  const lowerAbs =shuffleArray(exercises.filter(exercise => exercise.Target === 'Lower abs'));
-  const thirdExercise =shuffleArray(exercises.filter(exercise => !exercise.Target === 'Lower abs'));
-
-  
+  const calvesExercise =shuffleArray(exercises);
   // Select exercises according to the formula
   const selectedExercises = [
-    ...lowerAbs.slice(0, 1), 
-    ...lowerAbs.slice(1, 2), 
-    ...thirdExercise.slice(0, 1)
-    
+    ...calvesExercise.slice(0, 1),   
   ];
-  if(selectedExercises.length > Count){
-    selectedExercises.splice(Count-1 , 1);
-  }
+  
+  return selectedExercises;
+}
+function selectCalvesExercisesForHome(exercises, Count, beginner){
+ 
+  const calvesExercise =shuffleArray(exercises);
+  // Select exercises according to the formula
+  const selectedExercises = [
+    ...calvesExercise.slice(0, 1),   
+  ];
+  
   return selectedExercises;
 }
 function selectChestExercisesForGym(chestExercises, Count , beginner) {
-  const midChestCompound = chestExercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Mid chest');
+  
+    const midChestCompound = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Mid chest'));
 
-  const upperChestCompound = chestExercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Upper chest');
-  const lowerChestCompound = chestExercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Lower chest');
-
-  const overallChestIsolation = chestExercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Overall chest');
-  const upperChestIsolation = chestExercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Upper chest');
-
-  // Select exercises according to the formula
-  const selectedExercises = [
-    ...midChestCompound.slice(0, 1),  // 1 mid chest compound
-    ...upperChestCompound.slice(0, 1), // 1 upper chest compound
-    ...lowerChestCompound.slice(0, 1), // 1 lower chest compound
-    ...overallChestIsolation.slice(0, 1), // 1 overall chest isolation
-    ...upperChestIsolation.slice(0, 1)  // 1 upper chest isolation
-  ];
-
-
-  if(selectedExercises.length > Count){
-    selectedExercises.splice(Count-1 , 1);
+    const upperChestCompound = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Upper chest'));
+    const lowerChestCompound = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Lower chest'));
+  
+    const overallChestIsolation = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Overall chest'));
+    const upperChestIsolation = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Upper chest'));
+  
+    // Select exercises according to the formula
+    const selectedExercises = [
+      ...upperChestCompound.slice(0, 1), // 1 upper chest compound
+      ...midChestCompound.slice(0, 1),  // 1 mid chest compound
+      ...lowerChestCompound.slice(0, 1), // 1 lower chest compound
+      ...overallChestIsolation.slice(0, 1), // 1 overall chest isolation
+      ...upperChestIsolation.slice(0, 1)  // 1 upper chest isolation
+    ];
+  
+  
+    if(selectedExercises.length > Count){
+      selectedExercises.splice(Count-1 , 1);
+    }
+    
+    return selectedExercises;
   }
-  return selectedExercises;
+
+function selectChestExercisesForHome(chestExercises, Count , beginner) {
+ 
 }
 function selectGlutesExercisesForGym(exercises, Count, beginner){
   

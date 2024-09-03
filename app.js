@@ -893,7 +893,7 @@ const userInfo = {
   activityLevel: "Sedentary",
   age: "Adult (30-39)",
   alcoholConsumption: "occasionally",
-  bodyWeightSquatsCapability: "10To25",
+  bodyWeightSquatsCapability: "FiveToFifteen",
   bodyFatPercentage: "20-24%",
   bodyType: "bulky",
   challenges: "I struggle with consistency , Poor eating habits",
@@ -909,7 +909,7 @@ const userInfo = {
   medicalConditions: "diabetes",
   procrastinator: "Yes",
   pullUpsCapability: "None",
-  pushUpsCapablity: "OneToTen",
+  pushUpsCapablity: "None",
   sleepQuality: "MoreThanEightHours",
   smoking: "No",
   stressLevel: "low",
@@ -921,7 +921,7 @@ const userInfo = {
 };
 
 const prompt = `
-Generate a personalized exercise plan based on the following user information:
+Generate a personalized diet plan for 7 days that includes meal suggestions, nutritional information and ingredients with quantities based on the following user information:
 
 
 - **Body Fat Percentage**: ${userInfo.bodyFatPercentage}
@@ -936,114 +936,66 @@ Generate a personalized exercise plan based on the following user information:
 - **Workout Duration per Day**: ${userInfo.workoutDurationPerDay}
 
 
-
 {
-  "exercisePlan": {
-    "Day 1": {
-      "Warm-up": "5 minutes of brisk walking",
-      "Exercises": [
-        {
-          "Exercise": "Bodyweight Squats",
-          "VideoLink": "www.youtube.com/watch/asdhiwuyeoqwey",
-          "Reps": "3 sets of 10 reps",
-          "Rest": "30 seconds"
+  
+  "dietPlan": [
+    {
+      "Day": Day X,
+      "Meals": {
+        "Breakfast": {
+          "Meal": "Scrambled eggs with spinach and toast",
+          "Ingredients": "ingredients with quantities",
+          "Nutritional Information": {
+            "Calories": 300,
+            "Protein": 20,
+            "Carbohydrates": 25,
+            "Fat": 15
+          }
+        },
+        "Lunch": {
+          "Meal": "Grilled chicken salad with mixed greens and vinaigrette",
+          "Ingredients": "ingredients with quantities",
+          "Nutritional Information": {
+            "Calories": 400,
+            "Protein": 30,
+            "Carbohydrates": 20,
+            "Fat": 20
+          }
+        },
+        "Dinner": {
+          "Meal": "Baked salmon with quinoa and steamed broccoli",
+          "Ingredients": "ingredients with quantities",
+          "Nutritional Information": {
+            "Calories": 500,
+            "Protein": 35,
+            "Carbohydrates": 45,
+            "Fat": 15
+          }
+        },
+        "Snacks": {
+          "Meal": "Greek yogurt with mixed berries",
+          "Ingredients": "ingredients with quantities",
+          "Nutritional Information": {
+            "Calories": 150,
+            "Protein": 10,
+            "Carbohydrates": 20,
+            "Fat": 5
+          }
         }
-        
-      ],
-      "Cool-down": "5 minutes of stretching",
-      "Message": "anything about the day exercise will come here"
+      }
     }
-  },
-  "Day 2": {
-      
-      
-      
-      "Message": "anything about the rest day will come here"
-    }
-  },
+    
+  ],
   "Analysis": {
           "Analysis": "Detailed analysis"
 }
 }
 
+Format the plan in JSON format. Just send back a json formatted text. 
 Ensure the JSON response adheres to the structure defined above, and populate it with appropriate values. 
-
-Each day must have atleast 7 exercises.
-And the youtube Video links must be added to the json format with each exercise.
+Also send back the technical analysis about the plan that how did you calculate the calories and create the plan. 
 
 
-
-Format the plans in JSON format. Just send back a json formatted text. 
-
-The plan should take care of compound and isolation exercises theory.
-
-Below are the five general structures for a week. 
-
-Select the ${userInfo.workoutDaysPerWeek} - Day split and add appropriate exercises to it.
-Ensure that Rest days are mentioned in the plan if they are in the selected split.
-
-Three-Day Split
-
-Day 1: Push (4 exercises for chest, 3 for shoulders, 2 for triceps)
-Day 2: Pull (5 exercises for back, 1 for traps, 3 for biceps)
-Day 3: Rest day
-Day 4: Rest day
-Day 5: Legs/Abs (3 exercises for quads, 1 for hamstring, 1 for glutes, 1 for calves, 3 for abs)
-Day 6: Rest day
-Day 7: Rest day
-
-
-
-Four-Day Split
-
-Day 1: Chest/Biceps (Five exercises for chest, Three for biceps)
-Day 2: Back/Triceps (Five exercises for back, Three for triceps)
-Day 3: Rest day
-Day 4: Shoulders/Abs (Four exercises for shoulders, One for traps, Three for abs)
-Day 5: Rest day
-Day 6: Legs/Abs (Three exercises for quads, One for hamstring, One for glutes, One for calves, Three for abs)
-Day 7: Rest day
-
-
-Five-Day Split
-
-Day 1: Chest/Abs (5 exercises for chest, 3 for abs)
-Day 2: Back (5 exercises for back)
-Day 3: Rest day
-Day 4: Biceps/Triceps (3 exercises for biceps, 3 for triceps)
-Day 5: Rest day
-Day 6: Shoulders/Abs (3 exercises for shoulders, 1 for traps, 3 for abs)
-Day 7: Legs/Abs (3 exercises for quads, 1 for hamstring, 1 for glutes, 1 for calves, 3 for abs)
-
-
-Six-Day Split
-
-Day 1: Pull (5 exercises for back, 1 for traps, 3 for biceps)
-Day 2: Push (4 exercises for chest, 3 for shoulders, 2 for triceps)
-Day 3: Legs/Abs (3 exercises for quads, 1 for hamstring, 1 for glutes, 1 for calves, 3 for abs)
-Day 4: Rest day
-Day 5: Biceps/Abs (4 exercises for biceps, 3 for abs)
-Day 6: Pull (5 exercises for back, 1 for traps, 3 for biceps)
-Day 7: Push (4 exercises for chest, 3 for shoulders, 2 for triceps)
-
-
-Seven-Day Split
-
-Day 1: Pull (5 exercises for back, 1 for traps, 3 for biceps)
-Day 2: Push (4 exercises for chest, 3 for shoulders, 2 for triceps)
-Day 3: Legs/Abs (3 exercises for quads, 1 for hamstring, 1 for glutes, 1 for calves, 3 for abs)
-Day 4: Cardio or Weak Body Part Day (60 minutes of cardio or additional exercises for weak body parts)
-Day 5: Pull (5 exercises for back, 1 for traps, 3 for biceps)
-Day 6: Push (4 exercises for chest, 3 for shoulders, 2 for triceps)
-Day 7: Legs/Abs (3 exercises for quads, 1 for hamstring, 1 for glutes, 1 for calves, 3 for abs)
-
-
-Ensure that the plan adheres to the user's experience level 
-If user doesnt have gym access, ensure that only home exercises are included in the plan.
-
-For each day, include a message to inform the user which muscle group they will be working on.
-
-also send a detailed analysis on how you created the exercise plan for this user and why did you choose a specific day split.
 
 
 
@@ -1053,8 +1005,8 @@ async function generateDietPlan() {
   const apiKey = 'YOUR_OPENAI_API_KEY'; // Replace with your actual API key
 
   const data = {
-    model: "gpt-4o-mini",
-    max_tokens: 16384,
+    model: "gpt-4o",
+    max_tokens: 4096,
 
 
 
@@ -1229,14 +1181,14 @@ function selectAbsExercisesForGym(exercises, Count, beginner){
   else{
 
     const lowerAbs = shuffleArray(exercises.filter(exercise => exercise.Target === 'Lower abs'));
-    const overallAbs =  shuffleArray(exercises.filter(exercise => exercise.Target === 'Overall abs'));
-    const thirdExercise =shuffleArray(exercises.filter(exercise => exercise.Target !== 'Lower abs' && exercise.Target !== 'Overall abs'));
+    
+    const thirdExercise =shuffleArray(exercises.filter(exercise => exercise.Target !== 'Lower abs'));
   
     
     // Select exercises according to the formula
     selectedExercises = [
       ...lowerAbs.slice(0, 1), 
-      ...overallAbs.slice(0, 1), 
+      ...lowerAbs.slice(1, 2), 
       ...thirdExercise.slice(0, 1)
       
     ]; 
@@ -1428,29 +1380,47 @@ function selectChestExercisesForGym(chestExercises, Count , beginner) {
   }
 
 function selectChestExercisesForHome(chestExercises, Count , beginner) {
+  let selectedExercises = []
   if(beginner=== 'Yes'){
-    
-    const midChestCompound = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Mid chest'));
+  let firstExercise = [];
+    if(userInfo.pushUpsCapablity === 'None'){
+      firstExercise = shuffleArray(chestExercises.filter(exercise => exercise.Exercise === 'Kneeling push ups'));  
+    }
+    else{
+      firstExercise = shuffleArray(chestExercises.filter(exercise => exercise.Exercise === 'Standard push ups' || exercise.Exercise === 'Kneeling push ups'));
+    }
+    const secondExercise = shuffleArray(chestExercises.filter(exercise => exercise.Exercise === 'Resistance band floor press'));  
+    const thirdExercise = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Isolation'));  
 
-    const upperChestCompound = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Upper chest'));
-    const lowerChestCompound = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Compound' && exercise.Target === 'Lower chest'));
-  
-    const overallChestIsolation = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Overall chest'));
-    const upperChestIsolation = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Target === 'Upper chest'));
-  
+    
     // Select exercises according to the formula
-    const selectedExercises = [
-      ...upperChestCompound.slice(0, 1), // 1 upper chest compound
-      ...midChestCompound.slice(0, 1),  // 1 mid chest compound
-      ...lowerChestCompound.slice(0, 1), // 1 lower chest compound
-      ...overallChestIsolation.slice(0, 1), // 1 overall chest isolation
-      ...upperChestIsolation.slice(0, 1)  // 1 upper chest isolation
+    selectedExercises = [
+      ...firstExercise.slice(0, 1), 
+      ...secondExercise.slice(0, 1),
+      ...thirdExercise.slice(0, 1), 
+      ...thirdExercise.slice(1, 2), 
+      ...thirdExercise.slice(2, 3)  
     ];
   
   
   }
   else{
+    const firstCompound = shuffleArray(chestExercises.filter(exercise => exercise.Exercise === 'Decline push up'));
 
+    const secondCompound = shuffleArray(chestExercises.filter(exercise => exercise.Exercise === 'Standard push ups'));
+    const firstIsolation = shuffleArray(chestExercises.filter(exercise => exercise.Exercise === 'Resistance band decline flies'));
+  
+    const randomIsolations = shuffleArray(chestExercises.filter(exercise => exercise.Category === 'Isolation' && exercise.Exercise !== 'Resistance band decline flies'));
+    
+  
+    // Select exercises according to the formula
+    selectedExercises = [
+      ...firstCompound.slice(0, 1), 
+      ...secondCompound.slice(0, 1),
+      ...firstIsolation.slice(0, 1),
+      ...randomIsolations.slice(0, 1),
+      ...randomIsolations.slice(1, 2) 
+    ];
   }
   
   if(selectedExercises.length > Count){
@@ -1488,6 +1458,7 @@ function selectGlutesExercisesForHome(exercises, Count, beginner){
 }
 function selectHamstringsExercisesForGym(exercises, Count, beginner, quadsExercises){
   let selectedExercises = []
+  let hamstringsExercise = []
   if(beginner === 'Yes'){
     const hamstringsExercise =shuffleArray(exercises.filter(exercise => exercise.Exercise === 'Lying Leg curl' ||exercise.Exercise === 'Seated leg curl'));
     selectedExercises = [
@@ -1495,7 +1466,13 @@ function selectHamstringsExercisesForGym(exercises, Count, beginner, quadsExerci
     ];
   }
   else{
-    const hamstringsExercise =shuffleArray(exercises.filter(exercise => exercise.Exercise === 'Romanian deadlifts (RDL)' ||exercise.Exercise === 'Lying Leg curl' ||exercise.Exercise === 'Seated leg curl'));
+    if(quadsExercises.some(exercise => exercise.Exercise === 'Weighted Walking lunges' || exercise.Exercise === 'Weighted Standing Lunges')){
+      hamstringsExercise =shuffleArray(exercises.filter(exercise => exercise.Exercise === 'Lying Leg curl' ||exercise.Exercise === 'Seated leg curl'));
+    }
+    else{
+
+      hamstringsExercise =shuffleArray(exercises.filter(exercise => exercise.Exercise === 'Romanian deadlifts (RDL)' ||exercise.Exercise === 'Lying Leg curl' ||exercise.Exercise === 'Seated leg curl'));
+    }
     selectedExercises = [
       ...hamstringsExercise.slice(0, 1), 
     ];
@@ -1553,7 +1530,7 @@ function selectQuadsExercisesForGym(exercises, Count, beginner){
       exercise.Exercise.toLowerCase() === 'machine leg press'));
     const exercisesForThirdNumber = shuffleArray(exercises.filter(exercise =>
       exercise.Exercise.toLowerCase() === 'leg extensions' || 
-      exercise.Exercise.toLowerCase() === 'Weighted Walking lunges'));
+      exercise.Exercise.toLowerCase() === 'weighted walking lunges'));
   // Select exercises according to the formula
   selectedExercises = [
     ...exercisesForFirstNumber.slice(0, 1), 
@@ -1725,10 +1702,11 @@ if(selectedExercises.length > Count){
 return selectedExercises;
 }
 function selectTricepsExercisesForHome(exercises, Count, beginner){
+  let selectedExercises = []
   if(beginner === 'Yes'){
     
   // Select exercises according to the formula
-  const selectedExercises = [
+  selectedExercises = [
     ...exercises.slice(0, Count), 
     
     
@@ -1738,7 +1716,7 @@ function selectTricepsExercisesForHome(exercises, Count, beginner){
     const exercisesForFirstNumber = exercises.filter(exercise => exercise.Category === 'Compound');
     const exercisesForNextTwoNumber = exercises.filter(exercise => !exercise.Category === 'Compound');
      // Select exercises according to the formula
-  const selectedExercises = [
+  selectedExercises = [
     ...exercisesForFirstNumber.slice(0, 1), 
     ...exercisesForNextTwoNumber.slice(0, 1), 
     ...exercisesForNextTwoNumber.slice(1, 2)
@@ -1858,7 +1836,8 @@ function processExercises(exercises) {
 function filterBySplit(splitNumber, splits) {
   return splits.filter(splits => splits.Split === splitNumber);
 }
-readCsvs();
+// readCsvs();
+generateDietPlan();
 // function processDietPlan(plan) {
 // 	generatePdf(plan);
 // }
